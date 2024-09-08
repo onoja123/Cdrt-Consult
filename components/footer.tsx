@@ -18,15 +18,12 @@ const Footer = () => {
               {/* <div className=" h-auto flex items-start flex-col gap-5 justify-center"> */}
               <Link href={"/"}>
                 <div className="flex items-center justify-center gap-4">
-                  <Image
+                  {/* <Image
                     src="/cdrt-logo.png"
                     alt="Cdrd Logo"
                     width={40.68}
                     height={25.69}
-                  />
-                  <div className="font-bold text-3xl leading-27 text-[#ED6810]">
-                    Cdrt Consult
-                  </div>
+                  /> */}
                 </div>
               </Link>
               {/* </div> */}
@@ -76,19 +73,28 @@ const Footer = () => {
                   </span>
                 </p>
                 <br />
+                <p className="text-white">
+                  Phone 1:{" "}
+                  <a href="tel:+2348186874708" className="text-[#E6E6E6]">
+                    +234 818 6874708
+                  </a>
+                </p>
+                <p className="text-white">
+                  Phone 2:{" "}
+                  <a href="tel:+2348035077195" className="text-[#E6E6E6]">
+                    
+                    +234 803 5077195
+                  </a>
+                </p>
+                <br />
                 <p className="text-white flex items-center gap-2">
                   <FaLocationDot />
                   <span className="text-[#E6E6E6]">
-                    21B Copper Road, Ikoyi Lagos
+                  No. 11 Shehu Ladan Road, Kabama Layout
+                  Zaria, Kaduna State
                   </span>
                 </p>
                 <br />
-                {/* <p className="text-white">
-                  USA:{" "}
-                  <span className="text-[#E6E6E6]">
-                    130, 447 Broadway, 2nd Floor New York, NY 10013
-                  </span>
-                </p> */}
               </div>
               <ul className="flex items-center space-x-3 mt-9">
                 {socialMedia.map((socialItem) => (

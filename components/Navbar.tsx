@@ -53,12 +53,12 @@ const Navbar = () => {
             <Image
               src="/cdrt-logo.png"
               alt="Cdrd Logo"
-              width={95.68}
+              width={100.68}
               height={75.69}
             />
-            <div className="font-bold text-3xl leading-27 text-[#ED6810]">
+            {/* <div className="font-bold text-3xl leading-27 text-[#ED6810]">
               Cdrt Consult
-            </div>
+            </div> */}
           </div>
         </Link>
 

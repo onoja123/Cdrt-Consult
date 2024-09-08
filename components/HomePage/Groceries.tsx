@@ -28,7 +28,7 @@ const Groceries = () => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div
-            data-aos="fade-right"
+            // data-aos="fade-right"
             data-aos-duration="500"
             data-aos-delay="200"
             className="bg-[#1F7B1033] flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem]"
@@ -44,7 +44,7 @@ const Groceries = () => {
             <img src="/icon_g.svg" alt="" className="ml-auto w-[70px]" />
           </div>
           <div
-            data-aos="fade-right"
+            // data-aos="fade-right"
             data-aos-duration="500"
             data-aos-delay="300"
             className="bg-[#1F7B1033] rounded-2xl flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem] "
@@ -60,7 +60,7 @@ const Groceries = () => {
             <img src="/icon_g.svg" alt="" className="ml-auto w-[70px]" />
           </div>
           <div
-            data-aos="fade-right"
+            // data-aos="fade-right"
             data-aos-duration="500"
             data-aos-delay="300"
             className="bg-[#1F7B1033] rounded-2xl flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem] "
@@ -76,7 +76,7 @@ const Groceries = () => {
             <img src="/icon_g.svg" alt="" className="ml-auto w-[70px]" />
           </div>
           <div
-            data-aos="fade-right"
+            // data-aos="fade-right"
             data-aos-duration="500"
             data-aos-delay="300"
             className="bg-[#1F7B1033] rounded-2xl flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem] "
@@ -92,7 +92,7 @@ const Groceries = () => {
             <img src="/icon_g.svg" alt="" className="ml-auto w-[70px]" />
           </div>
           <div
-            data-aos="fade-right"
+            // data-aos="fade-right"
             data-aos-duration="500"
             data-aos-delay="300"
             className="bg-[#1F7B1033] rounded-2xl flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem] "

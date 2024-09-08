@@ -1,8 +1,8 @@
 import React from "react";
-import star from "@/public/icons/svg2.png";
-import bg_vector from "@/public/icons/svg2.png";
 import Image from "next/image";
 import { montserrat } from "@/font";
+import star from "@/public/icons/svg2.png";
+import bg_vector from "@/public/icons/svg2.png";
 
 const RC_About = () => {
   return (
@@ -19,78 +19,81 @@ const RC_About = () => {
       <div className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12 w-full">
         <div className="w-full flex flex-col gap-5 items-center">
           <h1 className="text-[26px] md:text-[30px] font-bold text-[#143642] items-center text-center">
-            About Us
+            About CDRT
           </h1>
           <div className="flex flex-col items-center lg:items-start gap-3">
             <p className="text-[16px] text-[#1A1A1A]">
-              We are a registered Human Resource Management and Development
-              Support Services Consultancy firm in Nigeria. Our firm is committed
-              to promoting people-centered development processes through research,
-              training, and capacity building.
-            </p>
-            <p className="text-[16px] text-[#1A1A1A] ml-4">
-              <strong>Our Vision:</strong> To promote Participatory, gender-sensitive, and
-              Sustainable Development processes.
-            </p>
-            <p className="text-[16px] text-[#1A1A1A] ml-4">
-              <strong>Our Approach:</strong> We use Participatory Learning and Action
-              methods to enhance stakeholder participation and ownership.
+              The Centre for Developmental Research and Training is a nonprofit
+              organization founded in 2018 with the mandate to promote people-centered
+              development processes. It is registered as a non-governmental incorporated
+              trustee with the Corporate Affairs Commission, Registration No. CAC/IT/NO 111099.
+              Its training and development services are tailored to the specific needs of client organizations.
             </p>
           </div>
-      
-          <div className="flex flex-col items-center gap-3 w-full">
+
+          <div className="flex flex-col items-center gap-3 w-full mt-8">
             <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
-              What We Do
+              Vision
             </h2>
-            <p className="text-[16px] text-[#1A1A1A w-full">
-              Our services are designed to support organizations and communities
-              in achieving their development objectives. We offer the following
-              services:
+            <p className="text-[16px] text-[#1A1A1A]">
+              A world in which development processes place emphasis on people's participation in identifying, planning, and execution of programs.
             </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-3 w-full mt-8">
+            <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
+              Mission
+            </h2>
+            <p className="text-[16px] text-[#1A1A1A]">
+              To promote participatory, gender-sensitive, and sustainable development through research and training.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center gap-3 w-full mt-8">
+            <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
+              Development Services
+            </h2>
             <ul className="list-none text-[16px] text-[#1A1A1A] space-y-4 w-full">
               <li className="flex items-start">
                 <span className="inline-block text-[#ED6810] text-2xl mr-3">
                   &#x2713;
                 </span>
-                <span>Core research and surveys</span>
+                <span>Research and Data Analysis: We have a team of multidisciplinary researchers conducting studies across Nigeria. We also perform qualitative and quantitative data analysis and interpretation.</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block text-[#ED6810] text-2xl mr-3">
                   &#x2713;
                 </span>
-                <span>Organisational Capacity Assessment (OCA)</span>
+                <span>Community Mobilization/Development: Using participatory learning and action tools, we engage communities from the preparatory stages of a program to ensure sustained community interest throughout the project lifecycle.</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block text-[#ED6810] text-2xl mr-3">
                   &#x2713;
                 </span>
-                <span>Evaluation research</span>
+                <span>Project Implementation and Management: We handle project activities and can partner or sub-grant with your organization to implement various projects and programs.</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block text-[#ED6810] text-2xl mr-3">
                   &#x2713;
                 </span>
-                <span>Community mobilization and development</span>
+                <span>Monitoring and Evaluation: We conduct situation analysis, baseline surveys, midline, and end-line evaluations. We also design M&E tools that serve as performance indicators throughout the project cycle.</span>
               </li>
               <li className="flex items-start">
                 <span className="inline-block text-[#ED6810] text-2xl mr-3">
                   &#x2713;
                 </span>
-                <span>Training and capacity building</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block text-[#ED6810] text-2xl mr-3">
-                  &#x2713;
-                </span>
-                <span>Project planning and management</span>
-              </li>
-              <li className="flex items-start">
-                <span className="inline-block text-[#ED6810] text-2xl mr-3">
-                  &#x2713;
-                </span>
-                <span>Translation and transcription services</span>
+                <span>Training & Workshop Facilitation: We facilitate and manage training sessions and workshops, handling both technical aspects and logistics.</span>
               </li>
             </ul>
+          </div>
+
+          <div className="flex flex-col items-center gap-3 w-full mt-8">
+            <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
+              Our Approach
+            </h2>
+            <p className="text-[16px] text-[#1A1A1A]">
+              The Centre employs skills and methods that enhance stakeholder participation through the use of Participatory Learning and Action (PLA) tools.
+            </p>
           </div>
         </div>
       </div>

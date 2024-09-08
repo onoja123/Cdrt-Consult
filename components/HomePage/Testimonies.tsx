@@ -5,32 +5,83 @@ import React from "react";
 const Testimonies: React.FC = () => {
   interface ContactProps {
     title: string;
-    description: string;
+    description: React.ReactNode;
   }
 
   const advisors: ContactProps[] = [
     {
       title: "Prof. Emmanuel Gyong",
-      description:
-        "Department of Sociology, Ahmadu Bello University, Zaria\nPhone: +234 8034533701",
+      description: (
+        <>
+          Department of Sociology, Ahmadu Bello University, Zaria
+          <br />
+          Phone:{" "}
+          <a href="tel:+2348034533701" className="text-blue-600 underline">
+            +234 8034533701
+          </a>
+        </>
+      ),
     },
     {
       title: "Dr. Sunday Emmanuel Ologunla",
-      description:
-        "Department of Economics, Bingham University, Auta Balefi, Nasarawa State\nPhone: +234 8037870578\nEmail: ologunlaemma@yahoo.com",
+      description: (
+        <>
+          Department of Economics, Bingham University, Auta Balefi, Nasarawa State
+          <br />
+          Phone:{" "}
+          <a href="tel:+2348037870578" className="text-blue-600 underline">
+            +234 8037870578
+          </a>
+          <br />
+          Email:{" "}
+          <a href="mailto:ologunlaemma@yahoo.com" className="text-blue-600 underline">
+            ologunlaemma@yahoo.com
+          </a>
+        </>
+      ),
     },
   ];
 
   const partners: ContactProps[] = [
     {
       title: "Theatre for Development Centre",
-      description:
-        "Ahmadu Bello University Zaria\nContact Person: Prof. Oga Steve Abah, Executive Director\nPhone: +234 8037037441\nEmail: aba.ogah@gmail.com",
+      description: (
+        <>
+          Ahmadu Bello University Zaria
+          <br />
+          Contact Person: Prof. Oga Steve Abah, Executive Director
+          <br />
+          Phone:{" "}
+          <a href="tel:+2348037037441" className="text-blue-600 underline">
+            +234 8037037441
+          </a>
+          <br />
+          Email:{" "}
+          <a href="mailto:aba.ogah@gmail.com" className="text-blue-600 underline">
+            aba.ogah@gmail.com
+          </a>
+        </>
+      ),
     },
     {
       title: "MambaPoint DevServices",
-      description:
-        "FCT Abuja\nContact Person: Dr. Dauda Garuba, Executive Director\nPhone: +234 8034261150\nEmail: daudagaruz@yahoo.com",
+      description: (
+        <>
+          FCT Abuja
+          <br />
+          Contact Person: Dr. Dauda Garuba, Executive Director
+          <br />
+          Phone:{" "}
+          <a href="tel:+2348034261150" className="text-blue-600 underline">
+            +234 8034261150
+          </a>
+          <br />
+          Email:{" "}
+          <a href="mailto:daudagaruz@yahoo.com" className="text-blue-600 underline">
+            daudagaruz@yahoo.com
+          </a>
+        </>
+      ),
     },
   ];
 
