@@ -17,8 +17,8 @@ const RC_About = () => {
       />
 
       <div className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12 w-full">
-        <div className="w-full flex flex-col gap-5 lg:items-start items-center">
-          <h1 className="text-[26px] md:text-[30px] font-bold text-[#143642] items-center">
+        <div className="w-full flex flex-col gap-5 items-center">
+          <h1 className="text-[26px] md:text-[30px] font-bold text-[#143642] items-center text-center">
             About Us
           </h1>
           <div className="flex flex-col items-center lg:items-start gap-3">
@@ -28,26 +28,26 @@ const RC_About = () => {
               to promoting people-centered development processes through research,
               training, and capacity building.
             </p>
-            <p className="text-[16px] text-[#1A1A1A]">
+            <p className="text-[16px] text-[#1A1A1A] ml-4">
               <strong>Our Vision:</strong> To promote Participatory, gender-sensitive, and
               Sustainable Development processes.
             </p>
-            <p className="text-[16px] text-[#1A1A1A]">
+            <p className="text-[16px] text-[#1A1A1A] ml-4">
               <strong>Our Approach:</strong> We use Participatory Learning and Action
               methods to enhance stakeholder participation and ownership.
             </p>
           </div>
       
-          <div className="flex flex-col items-center lg:items-start gap-3">
+          <div className="flex flex-col items-center gap-3 w-full">
             <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
               What We Do
             </h2>
-            <p className="text-[16px] text-[#1A1A1A]">
+            <p className="text-[16px] text-[#1A1A1A w-full">
               Our services are designed to support organizations and communities
               in achieving their development objectives. We offer the following
               services:
             </p>
-            <ul className="list-none text-[16px] text-[#1A1A1A] space-y-4">
+            <ul className="list-none text-[16px] text-[#1A1A1A] space-y-4 w-full">
               <li className="flex items-start">
                 <span className="inline-block text-[#ED6810] text-2xl mr-3">
                   &#x2713;

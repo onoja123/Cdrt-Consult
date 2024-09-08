@@ -5,7 +5,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className=" overflow overflow w-full h-fit md:h-[34em] gap-5 overflow flex md:flex-row flex-col-reverse items-center  justify-between px-5 md:px-20 lg:pl-16 xl:pl-24 mb-20">
+    <div className=" overflow overflow w-full h-fit md:h-[14em] gap-5 overflow flex md:flex-row flex-col-reverse items-center  justify-between px-5 md:px-20 lg:pl-16 xl:pl-24 mb-12">
       <div  className="max-w-7xl mx-auto items-center md:items-start md:[70%] lg:w-[100%] flex flex-col gap-5">
         <div
           className={`${montserrat.className} w-[100%] hidden md:block font-bold text-[28px] md:text-[50px] leading-[1.3]`}

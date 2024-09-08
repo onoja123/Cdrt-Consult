@@ -7,7 +7,7 @@ import Testimonies from "@/components/HomePage/Testimonies";
 
 export default function Home() {
   return (
-    <div className=" pt-28 md:pt-40 w-full flex flex-col">
+    <div className=" pt-28 md:pt-32 w-full flex flex-col">
       <Hero/>
       <Groceries/>
       <SkillSet />

@@ -9,7 +9,7 @@ const Groceries = () => {
     >
       <div className="w-[100%] lg:w-[60%] flex flex-col gap-3 mb-20">
         <h1 className="text-[#221919] text-center font-bold text-[24px]">
-            Our Service Wheel{" "}
+            Our Service{" "}
         </h1>
         <p className="text-[#838383] text-center font-medium text-[18px]">
         We carry out a variety of services including Core research and surveys, Organisational Capacity assessment (OCA),
@@ -20,7 +20,7 @@ const Groceries = () => {
       </div>
       <div className="w-full flex lg:flex-row flex-col items-center lg:items-start justify-between xl:justify-center gap-6 xl:gap-20">
         <Image
-          src="/grocery.png"
+          src="/Picture1.png"
           alt="grocery"
           width={400}
           height={400}
@@ -35,11 +35,11 @@ const Groceries = () => {
           >
             <div className="flex flex-col gap-3">
               <h2 className="text-[#221919] text-[18px] font-semibold">
-                Variety of products
+                {/* Variety of products */}
               </h2>
               <p className="text-[15px] text-[#4F4F4F] font-medium">
-                Get access to a wide range of products from your favourite
-                brands in one convenient place.
+                {/* Get access to a wide range of products from your favourite
+                brands in one convenient place. */}
               </p>
             </div>
             <img src="/icon_g.svg" alt="" className="ml-auto w-[70px]" />
@@ -52,12 +52,12 @@ const Groceries = () => {
           >
             <div className="flex flex-col gap-3">
               <h2 className="text-[#221919] text-[18px] font-semibold">
-                Affordable Prices
+                {/* Affordable Prices */}
               </h2>
               <p className="text-[15px] text-[#4F4F4F] font-medium">
-                Our platform supports local farmers, distributors and
+                {/* Our platform supports local farmers, distributors and
                 greenhouses there by giving you direct wholesale prices and
-                swift delivery at your door step.
+                swift delivery at your door step. */}
               </p>
             </div>
             <img src="/icon_g.svg" alt="" className="ml-auto w-[70px]" />

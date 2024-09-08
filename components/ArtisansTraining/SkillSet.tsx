@@ -9,10 +9,10 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 type Skill = string;
 
 const skillImages: Skill[] = [
-  "/skills1.svg",
-  "/skills2.svg",
-  "/skills3.svg",
-  "/skills4.svg",
+  "/Picture1.png",
+  "/Picture2.png",
+  "/Picture3.png",
+  "/Picture4.png",
 ];
 
 const options = {
@@ -80,7 +80,7 @@ const SkillSet = () => {
             alt="Skill"
             width={500}
             height={500}
-            className="lg:w-full"
+            className="lg:w-full h-[500px] rounded-[10px]"
           />
           </SplideSlide>
         ))}
