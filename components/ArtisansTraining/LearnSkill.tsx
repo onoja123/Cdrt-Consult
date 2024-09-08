@@ -26,7 +26,7 @@ const LearnSkill = () => {
   };
 
   return (
-    <div className="flex flex-col items-center pt-8 relative">
+    <div className="flex flex-col items-center pt-3 relative">
       <Image
         src="/plus4.svg"
         alt="plus4"
@@ -34,7 +34,7 @@ const LearnSkill = () => {
         height={0}
         className="w-[100px] h-[100px] sm:w-[150px] sm:h-[150px] -z-10 absolute right-[8%]"
       />
-      <div className="mt-8 w-full px-8 sm:px-4 lg:w-[60%] bg-white shadow-lg rounded-lg p-8">
+      <div className="my-3 w-full px-8 sm:px-4 lg:w-[60%] bg-white shadow-lg rounded-lg p-8">
         <h2 className="text-[#14183E] text-[22px] font-bold mb-6 text-center">Get in Touch</h2>
         <form onSubmit={handleSubmit} className="flex flex-col gap-6">
           <input
