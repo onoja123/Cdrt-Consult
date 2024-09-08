@@ -18,7 +18,7 @@ const Footer = dynamic(() => import("@/components/Footer"), {
 
 export const metadata: Metadata = {
   title: "Cdrt Consult",
-  description: "Artisan's app",
+  description: "The Centre for Developmental Research and Training (CDRT) is a nonprofit organization established in 2018, dedicated to fostering people-centered development through research and training. Registered with the Corporate Affairs Commission under Registration No. CAC/IT/NO 111099, CDRT is committed to sustainable, participatory, and gender-sensitive development practices.",
 };
 
 // set toast position

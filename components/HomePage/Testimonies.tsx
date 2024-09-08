@@ -17,7 +17,7 @@ const Testimonies: React.FC = () => {
           <br />
           Phone:{" "}
           <a href="tel:+2348034533701" className="text-blue-600 underline">
-            +234 8034533701
+            +2348034533701
           </a>
         </>
       ),
@@ -30,7 +30,7 @@ const Testimonies: React.FC = () => {
           <br />
           Phone:{" "}
           <a href="tel:+2348037870578" className="text-blue-600 underline">
-            +234 8037870578
+            +2348037870578
           </a>
           <br />
           Email:{" "}
@@ -47,13 +47,13 @@ const Testimonies: React.FC = () => {
       title: "Theatre for Development Centre",
       description: (
         <>
-          Ahmadu Bello University Zaria
+          Ahmadu Bello University, Zaria
           <br />
           Contact Person: Prof. Oga Steve Abah, Executive Director
           <br />
           Phone:{" "}
           <a href="tel:+2348037037441" className="text-blue-600 underline">
-            +234 8037037441
+            +2348037037441
           </a>
           <br />
           Email:{" "}
@@ -73,7 +73,7 @@ const Testimonies: React.FC = () => {
           <br />
           Phone:{" "}
           <a href="tel:+2348034261150" className="text-blue-600 underline">
-            +234 8034261150
+            +2348034261150
           </a>
           <br />
           Email:{" "}

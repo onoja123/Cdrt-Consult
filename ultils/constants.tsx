@@ -20,7 +20,7 @@ export const footerLinks = [
   {
     title: "Legal",
     links: [
-      { text: "Terms of use", url: "/terms-of-use" },
+      { text: "Terms of Use", url: "/terms-of-use" },
       {
         text: "Privacy Policy",
         url: "/privacy-policy",

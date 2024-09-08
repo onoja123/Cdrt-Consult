@@ -13,8 +13,7 @@ const Hero = () => {
           <h1 className="text-[#000000] text-center">Welcome to CDRT Consult</h1>
         </div>
         <p
-          className={`${montserrat.className} text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[#838383]`}
-        >
+          className="text-[#838383] text-center font-medium text-[18px]">
           Where we empower sustainable development through people-centered solutions.
           We are a Human Resource Management and Development Support Services Consultancy firm registered in Nigeria.
           Our mission is to promote participatory and gender-sensitive development processes that ensure long-term impact and community ownership.

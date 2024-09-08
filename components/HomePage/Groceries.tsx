@@ -8,11 +8,11 @@ const Groceries = () => {
       className={`px-[20px] md:px-[60px] flex flex-col items-center w-full ${montserrat.className} mb-40`}
     >
       <div className="w-[100%] lg:w-[60%] flex flex-col gap-3 mb-20">
-        <h1 className="text-[#221919] text-center font-bold text-[24px]">
+        <h1 className="text-[#221919] text-center font-bold text-[30px]">
             Our Service{" "}
         </h1>
         <p className="text-[#838383] text-center font-medium text-[18px]">
-        We carry out a variety of services including Core research and surveys, Organisational Capacity assessment (OCA),
+        We carry out a variety of services including core research and surveys, Organizational Capacity Assessment (OCA),
         Evaluation research, Community mobilization and development, Training and capacity building,
         Project planning and management, Translation and transcription services 
 
