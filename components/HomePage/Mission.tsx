@@ -8,20 +8,6 @@ const Mission = () => {
     <div
       className={`${montserrat.className} flex md:flex-row flex-col w-full relative items-center gap-20 px-[20px] md:px-[100px] lg:px-[200px] xl:px-[250px] py-16`}
     >
-      <img
-        src="/side-frame2.png"
-        alt=""
-        className=" absolute top-0 left-0 w-[100px] lg:w-[200px]"
-      />
-
-      <Image
-        src="/bazaar-phone.png"
-        alt="bazaar"
-        width={500}
-        height={500}
-        className=" w-[200px]"
-        data-aos="zoom-in" data-aos-duration="600"
-      />
       <div className="flex flex-col gap-3 items-center ">
         <h1 className="text-[#221919] text-center text-[24px] md:text-[30px] lg:text-[35px] xl:text-[40px] leading-[1.3] font-bold">
           We value your trust and security

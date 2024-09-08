@@ -48,15 +48,15 @@ const Serices = () => {
     </div>
   );
 
-  return renderContent(
-    showComponent === "services" ? (
-      <ServiceProvider />
-    ) : showComponent === "customers" ? (
-      <Customers />
-    ) : (
-      <ServiceProvider />
-    )
-  );
+  // return renderContent(
+  //   showComponent === "services" ? (
+  //     <ServiceProvider />
+  //   ) : showComponent === "customers" ? (
+  //     <Customers />
+  //   ) : (
+  //     <ServiceProvider />
+  //   )
+  // );
 };
 
 export default Serices;

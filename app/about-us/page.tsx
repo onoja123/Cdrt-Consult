@@ -10,7 +10,7 @@ export default function Home() {
       <Header/>
       <RC_About />
       {/* <RC_About2 /> */}
-      <Partners/>
+      {/* <Partners/> */}
     </div>
   );
 }

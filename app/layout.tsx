@@ -17,7 +17,7 @@ const Footer = dynamic(() => import("@/components/Footer"), {
 });
 
 export const metadata: Metadata = {
-  title: "Bazaar",
+  title: "Cdrt Consult",
   description: "Artisan's app",
 };
 

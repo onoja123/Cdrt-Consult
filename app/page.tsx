@@ -12,7 +12,7 @@ export default function Home() {
     <div className=" pt-28 md:pt-40 w-full flex flex-col">
       <Hero/>
       <Groceries/>
-      <Vendors/>
+      {/* <Vendors/> */}
       {/* <LocalStores/> */}
       <Mission/>
       <Testimonies/>

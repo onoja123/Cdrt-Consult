@@ -20,9 +20,9 @@ const Navbar = () => {
 
   const navItems = [
     { path: "/", label: "Home" },
-    { path: "/artisans", label: "Artisans" },
     { path: "/about-us", label: "About us" },
-    { path: "/artisans-training", label: "Training  Program" },
+    { path: "/artisans", label: "Our Team" },
+    { path: "/artisans-training", label: "Contact us" },
     // { path: "/", label: "Features" },
     // { path: "/", label: "Contact us" },
   ];
@@ -52,9 +52,9 @@ const Navbar = () => {
           <div className="flex items-center justify-center gap-4">
             <Image
               src="/cdrt-logo.png"
-              alt="Realcousins Logo"
-              width={40.68}
-              height={25.69}
+              alt="Cdrd Logo"
+              width={95.68}
+              height={75.69}
             />
             <div className="font-bold text-3xl leading-27 text-[#ED6810]">
               Cdrt Consult

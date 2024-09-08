@@ -19,13 +19,13 @@ const Footer = () => {
               <Link href={"/"}>
                 <div className="flex items-center justify-center gap-4">
                   <Image
-                    src="/../public/cdrt-logo.png"
-                    alt="Realcousins Logo"
+                    src="/cdrt-logo.png"
+                    alt="Cdrd Logo"
                     width={40.68}
                     height={25.69}
                   />
                   <div className="font-bold text-3xl leading-27 text-[#ED6810]">
-                    {/* Bazaar */}
+                    Cdrt Consult
                   </div>
                 </div>
               </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
                 <p className="text-white">
                   Email:{" "}
                   <span className="text-[#E6E6E6]">
-                    artisanstraining@bazzar.africa
+                    cdrt@cdrtconcult.ng
                   </span>
                 </p>
                 <br />
@@ -110,7 +110,7 @@ const Footer = () => {
 
           <div className="pt-8">
             <p className="text-sm text-center text-[#E6E6E6]">
-              Copyright © {moment().format("YYYY")}, Bazaar.
+              Copyright © {moment().format("YYYY")}, Cdrt Consult.
             </p>
           </div>
         </div>

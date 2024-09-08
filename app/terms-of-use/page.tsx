@@ -4,24 +4,24 @@ const TermsOfUsePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"  style={{background: 'linear-gradient(to right, #FF6525, #272727)'}}></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"  style={{background: 'linear-gradient(to right, #FF6525)'}}></div>
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <h1 className="text-4xl font-bold text-center mb-4">Terms Of Use</h1>
-          <p className="text-center mb-8">Last Updated: 20th June, 2024</p>
+          <p className="text-center mb-8">Last Updated: 20th September, 2024</p>
           {/* Add your terms here */}
           <div className="prose prose-sm max-w-none">
             <article>
               <h2 id="toc" className="text-3xl font-semibold text-left text-gray-900 leading-tight mt-4 mb-3">
                 Introduction
               </h2>
-                          <p className="text-gray-700 text-base mb-4">Welcome to Bazaar, an online marketplace and grocery service in Nigeria. This agreement outlines the terms and conditions that govern your use of our platform and services.</p>
-                          <p className='ext-gray-700 text-base mb-4'>By accessing or using our platform, you agree to be bound by the terms and conditions set forth below.</p>
+                          <p className="text-gray-700 text-base mb-4"></p>
+                          <p className='ext-gray-700 text-base mb-4'></p>
               {/* More sections as needed */}
             </article>
           </div>
         </div>
           </div>
-          <div className='w-[95%] lg:w-[80%] mx-auto mt-20 text-base text-gray-700'>
+          {/* <div className='w-[95%] lg:w-[80%] mx-auto mt-20 text-base text-gray-700'>
               <>
                             <ul>
                   
@@ -104,7 +104,7 @@ const TermsOfUsePage = () => {
                     23. Last updated on 20-06-2024
                   </li>
               </ul></>
-          </div>
+          </div> */}
     </div>
   );
 };

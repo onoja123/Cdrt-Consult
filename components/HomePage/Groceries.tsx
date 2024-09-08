@@ -5,15 +5,17 @@ import React from "react";
 const Groceries = () => {
   return (
     <div
-      className={`px-[20px] md:px-[60px] flex flex-col items-center w-full ${montserrat.className} mb-20`}
+      className={`px-[20px] md:px-[60px] flex flex-col items-center w-full ${montserrat.className} mb-40`}
     >
-      <div className="w-[100%] lg:w-[60%] flex flex-col gap-3 mb-10">
+      <div className="w-[100%] lg:w-[60%] flex flex-col gap-3 mb-20">
         <h1 className="text-[#221919] text-center font-bold text-[24px]">
-          Products you love delivered in minutes{" "}
+            Our Service Wheel{" "}
         </h1>
-        <p className="text-[#838383] text-center font-medium text-[16px]">
-          We work directly with manufacturerers, wholesalers and distributors to
-          get you the price and highest quality groceries and other essentials
+        <p className="text-[#838383] text-center font-medium text-[18px]">
+        We carry out a variety of services including Core research and surveys, Organisational Capacity assessment (OCA),
+        Evaluation research, Community mobilization and development, Training and capacity building,
+        Project planning and management, Translation and transcription services 
+
         </p>
       </div>
       <div className="w-full flex lg:flex-row flex-col items-center lg:items-start justify-between xl:justify-center gap-6 xl:gap-20">

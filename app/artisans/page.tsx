@@ -9,11 +9,11 @@ const page = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-between ">
       <Header />
-      <Slide />
+      {/* <Slide /> */}
       <HowItWorks />
-      <Service />
+      {/* <Service /> */}
       {/* <Shopping /> */}
-      <GetStarted />
+      {/* <GetStarted /> */}
     </div>
   )
 }

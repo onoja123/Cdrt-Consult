@@ -1,6 +1,6 @@
 import React from 'react'
 import Community from '@/components/ArtisansTraining/Community'
-import Hero from '@/components/ArtisansTraining/Hero'
+import Contact from '@/components/ArtisansTraining/Contact'
 import LearnSkill from '@/components/ArtisansTraining/LearnSkill'
 import SkillSet from '@/components/ArtisansTraining/SkillSet'
 import SkillUp from '@/components/ArtisansTraining/SkillUp'
@@ -11,14 +11,8 @@ import Partners from '@/components/Partners'
 const page = () => {
   return (
     <div>
-    <Hero/>
+    <Contact/>
     <LearnSkill/>
-    <SkillUp/>
-    <Courses/>
-    <SkillSet/>
-    <Partners/>
-    <Community/>
-    <Testimony/>
   </div>
   )
 }

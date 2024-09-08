@@ -8,6 +8,7 @@ import Link from "next/link";
 import toast, { Toaster } from "react-hot-toast";
 import { useRouter } from "next/navigation";
 import PaymentModal from "@/components/PaymentModal";
+import moment from "moment/moment";
 
 const Page = () => {
   const [titleDropDown, setTitleDropDown] = useState(false);
@@ -375,7 +376,7 @@ const Page = () => {
         />
       </div>
       <p className="text-center text-[14px] text-[#333333] font-normal">
-        Copyright © 2024 Bazaar Africa
+        Copyright © {moment().format("YYYY")}, Cdrt Consult.
       </p>
     </div>
   );

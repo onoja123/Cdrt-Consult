@@ -16,7 +16,7 @@ const newsletter = () => {
         <Image src={Svg} className="absolute right-0" alt="" />
         <h1 className="text-[20px] md:text-[30px] text-[#5E6282] font-semibold ">
           Subscribe to get information, latest news and other interesting
-          offers about Bazaar
+          offers about Cdrt Consult
         </h1>
         <form className="flex flex-col md:flex-row items-center md:items-start  w-full  mx-auto  lg:py-10 justify-center pt-5  gap-4">
           <div className="relative w-full lg:w-[50%] ">

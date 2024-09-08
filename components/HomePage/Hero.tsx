@@ -19,8 +19,6 @@ const Hero = () => {
           We are a Human Resource Management and Development Support Services Consultancy firm registered in Nigeria.
           Our mission is to promote participatory and gender-sensitive development processes that ensure long-term impact and community ownership.
         </p>
-        <div className="flex flex-wrap md:justify-start justify-center items-center gap-4 mt-3">
-        </div>
       </div>
       <div className=" relative w-fit mt-2 flex flex-col items-center">
         <div
