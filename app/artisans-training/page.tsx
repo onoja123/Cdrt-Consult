@@ -1,11 +1,7 @@
 import React from 'react'
-import Community from '@/components/ArtisansTraining/Community'
 import Contact from '@/components/ArtisansTraining/Contact'
 import LearnSkill from '@/components/ArtisansTraining/LearnSkill'
 import SkillSet from '@/components/ArtisansTraining/SkillSet'
-import SkillUp from '@/components/ArtisansTraining/SkillUp'
-import Testimony from '@/components/ArtisansTraining/Testimony'
-import Courses from '@/components/ArtisansTraining/Courses'
 import Partners from '@/components/Partners'
 
 const page = () => {

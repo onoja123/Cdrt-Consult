@@ -2,7 +2,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { usePathname } from "next/navigation";
-import Footer from "./Footer";
+import Footer from "./footer";
 
 
 interface WrapperProps {
