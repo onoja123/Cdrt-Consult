@@ -44,11 +44,11 @@ const options = {
 const SkillSet = () => {
   return (
     <div className="w-full flex flex-col items-center justify-center pt-16 md:pt-20 gap-16">
-      <div className="flex flex-col gap-3 items-start w-full md:w-[90%] lg:w-[70%] px-5 md:pl-20">
+      {/* <div className="flex flex-col gap-3 items-start w-full md:w-[90%] lg:w-[70%] px-5 md:pl-20">
         <h5
           className={`bg-[#F5FBF6] rounded-md font-semibold text-[13px] text-[#FF6525] py-1 mx-auto sm:mx-0 sm:ml-24 px-4 ${inter.className}`}
         >
-          Why Bazaar
+          Why Cdrt?
         </h5>
         <h1
           className={` text-[#14183E] font-bold text-[19px] mx-auto text-center sm:text-left sm:mx-0 sm:text-[28px] ${sora.className}`}
@@ -63,7 +63,7 @@ const SkillSet = () => {
           to bridge that gap and empower you to achieve a fulfilling career in a
           field you&apos;re passionate about. Here&apos;s how we make a difference:
         </p>
-      </div>
+      </div> */}
 
       <Splide options={options} extensions={{ AutoScroll }}>
         {skillImages.map((item, index) => (
