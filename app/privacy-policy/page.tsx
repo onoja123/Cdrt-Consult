@@ -4,24 +4,24 @@ const TermsOfUsePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
       <div className="relative py-3 sm:max-w-xl sm:mx-auto">
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"  style={{background: 'linear-gradient(to right, #FF6525, #272727)'}}></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-sky-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:-rotate-6 sm:rounded-3xl"  style={{background: 'linear-gradient(to right, #FF6525)'}}></div>
         <div className="relative px-4 py-10 bg-white shadow-lg sm:rounded-3xl sm:p-20">
           <h1 className="text-4xl font-bold text-center mb-4">Privacy Policy</h1>
-          <p className="text-center mb-8">Last Updated: 20th June, 2024</p>
+          <p className="text-center mb-8">Last Updated: 20th September, 2024</p>
           {/* Add your terms here */}
           <div className="prose prose-sm max-w-none">
             <article>
               <h2  className="text-3xl font-semibold text-left text-gray-900 leading-tight mt-4 mb-3">
                 Introduction
               </h2>
-                          <p className="text-gray-700  mb-4 text-[20px]">At Bazaar, we are committed to protecting your privacy and ensuring that your personal information is used responsibly and icompliance with applicable laws and regulations. This privacy policy describes hon w we collect, use, disclose, protect, and retain your information.</p>
-                          <p className='text-gray-700 text-base mb-4'>By using our service, you agree to the terms of this privacy policy.</p>
+                <p className="text-gray-700 text-base mb-4"></p>
+                <p className='ext-gray-700 text-base mb-4'></p>
               {/* More sections as needed */}
             </article>
           </div>
         </div>
           </div>
-          <div className='w-[95%] lg:w-[80%] mx-auto mt-20 text-[20px] text-gray-700'>
+          {/* <div className='w-[95%] lg:w-[80%] mx-auto mt-20 text-[20px] text-gray-700'>
               <>
                 <ul>
                   <li>
@@ -136,7 +136,7 @@ const TermsOfUsePage = () => {
                   </li>
                   
               </ul></>
-          </div>
+          </div> */}
     </div>
   );
 };

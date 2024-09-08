@@ -5,7 +5,7 @@ import React from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import Newsletter from "@/components/landing-page/newsletter";
+
 
 
 const Partners = () => {
@@ -95,7 +95,6 @@ const Partners = () => {
         </Splide>
       </div>
 
-      <Newsletter />
     </div>
   );
 };

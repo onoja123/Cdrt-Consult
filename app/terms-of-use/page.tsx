@@ -14,8 +14,8 @@ const TermsOfUsePage = () => {
               <h2 id="toc" className="text-3xl font-semibold text-left text-gray-900 leading-tight mt-4 mb-3">
                 Introduction
               </h2>
-                          <p className="text-gray-700 text-base mb-4"></p>
-                          <p className='ext-gray-700 text-base mb-4'></p>
+                <p className="text-gray-700 text-base mb-4"></p>
+                <p className='ext-gray-700 text-base mb-4'></p>
               {/* More sections as needed */}
             </article>
           </div>
