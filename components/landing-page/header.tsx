@@ -14,13 +14,14 @@ const Header = () => {
         <h1 className="text-[24px] md:text-[30px] text-left md:text-center text-[#FFFFFF] font-bold">
           Meet the Team Behind Our Exceptional Services
         </h1>
-
         <p className={`text-left md:text-center w-full sm:w-[85%] text-[14px] lg:text-[24px] text-[#CBCBCC] z-10 ${inter.className}`}>
           We carry out a variety of services including Core research and surveys, 
           Organisational Capacity assessment (OCA), Evaluation research, Community 
           mobilization and development, Training and capacity building, Project 
           planning and management, Translation and transcription services.
         </p>
+
+
       </div>
     </div>
   );

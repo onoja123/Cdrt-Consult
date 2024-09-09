@@ -11,12 +11,13 @@ const Groceries = () => {
         <h1 className="text-[#221919] text-center font-bold text-[30px]">
             Our Service{" "}
         </h1>
-        <p className="text-[#838383] text-center font-medium text-[18px]">
-        We carry out a variety of services including core research and surveys, Organizational Capacity Assessment (OCA),
-        Evaluation research, Community mobilization and development, Training and capacity building,
-        Project planning and management, Translation and transcription services 
+        <p className="text-[#838383] text-left font-medium text-[14px] md:text-[18px] p-4">
+  We carry out a variety of services including core research and surveys, Organizational Capacity Assessment (OCA),
+  Evaluation research, Community mobilization and development, Training and capacity building,
+  Project planning and management, Translation and transcription services 
+</p>
 
-        </p>
+
       </div>
       <div className="w-full flex lg:flex-row flex-col items-center lg:items-start justify-between xl:justify-center gap-6 xl:gap-20">
         <Image
