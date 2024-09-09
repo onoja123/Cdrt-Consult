@@ -11,7 +11,7 @@ const Navbar = dynamic(() => import("@/components/Navbar"), {
   suspense: true,
   ssr: false,
 });
-const Footer = dynamic(() => import("@/components/Footer"), {
+const Footer = dynamic(() => import("@/components/footer"), {
   suspense: true,
   ssr: false,
 });
