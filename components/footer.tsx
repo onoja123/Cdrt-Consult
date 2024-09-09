@@ -69,8 +69,8 @@ const Footer = () => {
                 <p className="text-white">
                   Email:{" "}
                   <span className="text-[#E6E6E6]">
-                    cdrt@cdrtconcult.ng
-                  </span>
+                    cdrtmails@gmail.com
+                    </span>
                 </p>
                 <br />
                 <p className="text-white">
