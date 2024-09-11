@@ -10,21 +10,23 @@ const Hero = () => {
         <div
           className={`${montserrat.className} w-[100%] hidden md:block font-bold text-[28px] md:text-[50px] leading-[1.3]`}
         >
-          <h1 className="text-[#000000] text-center">Welcome to CDRT CONSULT</h1>
+        <h1 className="text-[#000000] text-center">Welcome to CDRT</h1>
         </div>
-        <p
-          className={`text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[#838383]`}
-        >
+        <p className="text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[#838383]">
           Where we empower sustainable development through people-centered solutions.
           We are a Human Resource Management and Development Support Services Consultancy firm registered in Nigeria.
           Our mission is to promote participatory and gender-sensitive development processes that ensure long-term impact and community ownership.
         </p>
+        <p className="text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[#838383]">
+          <strong>CDRT CONSULT</strong> is the enterprise arm of CDRT, providing specialized consultancy services to further our mission.
+        </p>
       </div>
+      
       <div className=" relative w-fit mt-2 flex flex-col items-center">
         <div
           className={`${montserrat.className} md:hidden block text-center mb-2 font-semibold text-[28px] leading-[1.3]`}
         >
-          <h1 className="text-[#000000]">Welcome to CDRT CONSULT</h1>
+        <h1 className="text-[#000000] text-center">Welcome to CDRT</h1>
         </div>
       </div>
     </div>

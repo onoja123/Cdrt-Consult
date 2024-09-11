@@ -12,12 +12,10 @@ const Groceries = () => {
             Our Service{" "}
         </h1>
         <p className="text-[#838383] text-left font-medium text-[14px] md:text-[18px] p-4">
-  We carry out a variety of services including core research and surveys, Organizational Capacity Assessment (OCA),
-  Evaluation research, Community mobilization and development, Training and capacity building,
-  Project planning and management, Translation and transcription services 
-</p>
-
-
+          At CDRT Consult, we offer a range of specialized consultancy services to support sustainable development and organizational growth. 
+          Our vision is a world where development processes emphasize people's participation in identifying, planning, and executing programs. 
+          Our mission is to promote participatory, gender-sensitive, and sustainable development through research and training.
+        </p>
       </div>
       <div className="w-full flex lg:flex-row flex-col items-center lg:items-start justify-between xl:justify-center gap-6 xl:gap-20">
         <Image

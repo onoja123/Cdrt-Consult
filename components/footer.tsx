@@ -2,7 +2,8 @@
 import moment from "moment/moment";
 import { footerLinks, socialMedia } from "@/ultils/constants";
 import { useRouter } from "next/navigation";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -64,54 +65,64 @@ const Footer = () => {
               </div>
             ))}
 
-            <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
-              <div className="">
-                <p className="text-white">
-                  Email:{" "}
-                  <span className="text-[#E6E6E6]">
-                    cdrtmails@gmail.com
-                    </span>
-                </p>
-                <br />
-                <p className="text-white">
+          <div className="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+            <div className="">
+              <p className="text-white flex items-center gap-2">
+                <FaLocationDot />
+                <span className="text-[#E6E6E6]">
+                  No. 11 Shehu Ladan Road, Kabama Layout, Zaria, Kaduna State
+                </span>
+              </p>
+              <br />
+              <p className="text-white flex items-center gap-2">
+                <FaPhone />
+                <span>
                   Phone 1:{" "}
                   <a href="tel:+2348186874708" className="text-[#E6E6E6]">
                     +234 818 6874708
                   </a>
-                </p>
-                <p className="text-white">
+                </span>
+              </p>
+              <p className="text-white flex items-center gap-2">
+                <FaPhone />
+                <span>
                   Phone 2:{" "}
                   <a href="tel:+2348035077195" className="text-[#E6E6E6]">
-                    
                     +234 803 5077195
                   </a>
-                </p>
-                <br />
-                <p className="text-white flex items-center gap-2">
-                  <FaLocationDot />
-                  <span className="text-[#E6E6E6]">
-                  No. 11 Shehu Ladan Road, Kabama Layout
-                  Zaria, Kaduna State
-                  </span>
-                </p>
-                <br />
-              </div>
-              <ul className="flex items-center space-x-3 mt-9">
-                {socialMedia.map((socialItem) => (
-                  <li key={socialItem.id}>
-                    <a
-                      href={socialItem.link}
-                      title=""
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-colorOrange focus:bg-colorOrange"
-                    >
-                      <socialItem.icon />
-                    </a>
-                  </li>
-                ))}
-              </ul>
+                </span>
+              </p>
+              <br />
+              <p className="text-white flex items-center gap-2">
+                <FaEnvelope />
+                <span className="text-[#E6E6E6]">cdrtmails@gmail.com</span>
+              </p>
+              <br />
+              {/* <p className="text-white">
+                Website:{" "}
+                <a href="https://yourwebsite.com" className="text-[#E6E6E6]">
+                  www.yourwebsite.com
+                </a>
+              </p> */}
+              <br />
             </div>
+            <ul className="flex items-center space-x-3 mt-9">
+              {socialMedia.map((socialItem) => (
+                <li key={socialItem.id}>
+                  <a
+                    href={socialItem.link}
+                    title=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center text-white transition-all duration-200 bg-gray-800 rounded-full w-7 h-7 hover:bg-colorOrange focus:bg-colorOrange"
+                  >
+                    <socialItem.icon />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           </div>
 
           <div className="pt-8">

@@ -30,7 +30,7 @@ const RC_About = () => {
               Its training and development services are tailored to the specific needs of client organizations.
             </p>
           </div>
-
+{/* 
           <div className="flex flex-col items-center gap-3 w-full mt-8">
             <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
               Vision
@@ -47,7 +47,7 @@ const RC_About = () => {
             <p className="text-[16px] text-[#1A1A1A]">
               To promote participatory, gender-sensitive, and sustainable development through research and training.
             </p>
-          </div>
+          </div> */}
 
           <div className="flex flex-col items-center gap-3 w-full mt-8">
             <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
