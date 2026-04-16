@@ -27,13 +27,14 @@ const ContentContext = createContext<ContentContextType>({
 });
 
 async function fetchSection<T>(section: string, fallback: T): Promise<T> {
+  if (!db) return fallback;
   try {
     const snap = await getDoc(doc(db, "content", section));
     if (snap.exists()) {
       return { ...fallback, ...snap.data() } as T;
     }
   } catch {
-    // Firebase not configured yet — silently use defaults
+    // silently fall back to defaults
   }
   return fallback;
 }
