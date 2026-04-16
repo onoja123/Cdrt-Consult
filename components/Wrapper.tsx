@@ -11,10 +11,12 @@ interface WrapperProps {
 
 const Wrapper = ({ children }: WrapperProps) => {
   const pathname = usePathname();
+  const isAdmin = pathname?.startsWith("/admin");
+
   return (
     <>
-      {pathname === "/artisans-training/register" ? (
-        <>{ children }</>
+      {isAdmin || pathname === "/artisans-training/register" ? (
+        <>{children}</>
       ) : (
         <div>
           <Navbar />
