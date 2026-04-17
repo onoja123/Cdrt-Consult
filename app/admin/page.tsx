@@ -13,14 +13,15 @@ export default function AdminLogin() {
 
   async function handleLogin(e: React.FormEvent) {
     e.preventDefault();
+    if (loading) return;
     setError("");
     setLoading(true);
     try {
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/admin/dashboard");
+      // keep loading=true so the button stays disabled during navigation
     } catch (err: any) {
       setError("Invalid email or password.");
-    } finally {
       setLoading(false);
     }
   }
@@ -42,7 +43,8 @@ export default function AdminLogin() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="border border-gray-300 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
+              disabled={loading}
+              className="border border-gray-300 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100 disabled:opacity-60 disabled:cursor-not-allowed"
               placeholder="admin@cdrtconsult.com"
             />
           </div>
@@ -54,7 +56,8 @@ export default function AdminLogin() {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="border border-gray-300 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100"
+              disabled={loading}
+              className="border border-gray-300 rounded-lg px-4 py-2.5 text-sm outline-none focus:border-orange-500 focus:ring-2 focus:ring-orange-100 disabled:opacity-60 disabled:cursor-not-allowed"
               placeholder="••••••••"
             />
           </div>

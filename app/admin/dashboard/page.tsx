@@ -1080,10 +1080,55 @@ export default function Dashboard() {
 
   if (checking) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <div className="flex flex-col items-center gap-3">
-          <div className="w-8 h-8 border-3 border-orange-400 border-t-transparent rounded-full animate-spin" style={{ borderWidth: 3 }} />
-          <p className="text-sm text-gray-400">Loading dashboard…</p>
+      <div className="min-h-screen bg-gray-50 flex flex-col" style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" }}>
+        {/* top bar skeleton */}
+        <div className="h-14 bg-white border-b border-gray-100 flex items-center justify-between px-4 lg:px-6 shrink-0">
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 rounded-lg bg-gray-200 animate-pulse" />
+            <div className="w-16 h-4 rounded bg-gray-200 animate-pulse hidden sm:block" />
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-20 h-7 rounded-lg bg-gray-200 animate-pulse hidden sm:block" />
+            <div className="w-16 h-7 rounded-lg bg-gray-200 animate-pulse" />
+          </div>
+        </div>
+
+        <div className="flex flex-1 overflow-hidden">
+          {/* sidebar skeleton */}
+          <aside className="hidden lg:flex flex-col w-56 bg-white border-r border-gray-100 shrink-0 p-3 gap-2">
+            <div className="w-full h-8 rounded-lg bg-gray-100 animate-pulse mb-1" />
+            {/* group 1 */}
+            <div className="w-24 h-3 rounded bg-gray-100 animate-pulse mt-2 mb-1 ml-2" />
+            {[1,2,3,4].map(i => (
+              <div key={i} className="w-full h-8 rounded-lg bg-gray-100 animate-pulse" />
+            ))}
+            {/* group 2 */}
+            <div className="w-20 h-3 rounded bg-gray-100 animate-pulse mt-3 mb-1 ml-2" />
+            {[1,2].map(i => (
+              <div key={i} className="w-full h-8 rounded-lg bg-gray-100 animate-pulse" />
+            ))}
+            {/* group 3 */}
+            <div className="w-20 h-3 rounded bg-gray-100 animate-pulse mt-3 mb-1 ml-2" />
+            {[1,2,3].map(i => (
+              <div key={i} className="w-full h-8 rounded-lg bg-gray-100 animate-pulse" />
+            ))}
+          </aside>
+
+          {/* main content skeleton */}
+          <main className="flex-1 overflow-y-auto p-4 lg:p-6 flex flex-col gap-5">
+            {/* hero card */}
+            <div className="rounded-2xl bg-gray-200 animate-pulse h-28 w-full" />
+            {/* overview grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+              {[1,2,3,4,5,6,7,8,9,10].map(i => (
+                <div key={i} className="bg-white border border-gray-100 rounded-2xl p-5 flex flex-col gap-3 shadow-sm">
+                  <div className="w-9 h-9 rounded-xl bg-gray-100 animate-pulse" />
+                  <div className="w-32 h-4 rounded bg-gray-100 animate-pulse" />
+                  <div className="w-full h-3 rounded bg-gray-100 animate-pulse" />
+                </div>
+              ))}
+            </div>
+          </main>
         </div>
       </div>
     );
