@@ -46,7 +46,7 @@ const Navbar = () => {
   });
 
   return (
-    <header className=" w-full py-4 fixed z-50 bg-white shadow-[1px_1px_6px_rgb(0,0,0,0.1)] ">
+    <header className=" w-full py-4 fixed z-50 bg-[var(--cdrt-navbar-bg)] shadow-[1px_1px_6px_rgb(0,0,0,0.1)] ">
       <nav className="flex justify-between items-center px-[20px] sm:px-[80px] xl:px-[100px] relative z-10">
         <Link href={"/"}>
           <div className="flex items-center justify-center gap-4">
@@ -68,7 +68,7 @@ const Navbar = () => {
               <li
                 key={item.path}
                 className={
-                  path === item.path ? "text-[#ED6810]" : "text-[#838383]"
+                  path === item.path ? "text-[var(--cdrt-primary)]" : "text-[var(--cdrt-body)]"
                 }
               >
                 <Link
@@ -109,7 +109,7 @@ const Navbar = () => {
                   <li
                     key={item.path}
                     className={
-                      path === item.path ? "text-[#ED6810]" : "text-[#dadada]"
+                      path === item.path ? "text-[var(--cdrt-primary)]" : "text-[#dadada]"
                     }
                     onClick={() => setMobileView(false)}
                   >

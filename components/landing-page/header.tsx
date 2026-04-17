@@ -8,9 +8,9 @@ const Header = () => {
   const { headerTitle, headerDescription } = content.team;
 
   return (
-    <div className="w-full relative pt-36 pb-20 px-[13px] md:px-[100px] lg:px-[200px] xl:px-[300px] bg-black overflow-hidden">
+    <div className="w-full relative pt-36 pb-20 px-[13px] md:px-[100px] lg:px-[200px] xl:px-[300px] bg-[var(--cdrt-dark-bg)] overflow-hidden">
       <div className="flex flex-col items-center gap-10">
-        <p className="bg-[#FF6525] text-[#fff] py-2 z-10 px-10 rounded-full">
+        <p className="bg-[var(--cdrt-primary)] text-[#fff] py-2 z-10 px-10 rounded-full">
           Meet Our Team
         </p>
 
@@ -18,7 +18,7 @@ const Header = () => {
           {headerTitle}
         </h1>
         <p
-          className={`text-left md:text-center w-full sm:w-[85%] text-[14px] lg:text-[24px] text-[#CBCBCC] z-10 ${inter.className}`}
+          className={`text-left md:text-center w-full sm:w-[85%] text-[14px] lg:text-[24px] text-[var(--cdrt-dark-text)] z-10 ${inter.className}`}
         >
           {headerDescription}
         </p>

@@ -3,6 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── CDRT theme variables (defaults — overridden at runtime by ThemeInjector) ── */
+:root {
+  --cdrt-primary:      #FF6525;
+  --cdrt-heading:      #000000;
+  --cdrt-body:         #838383;
+  --cdrt-dark-text:    #CBCBCC;
+  --cdrt-navbar-bg:    #ffffff;
+  --cdrt-dark-bg:      #000000;
+  --cdrt-section-bg:   #FAFAFA;
+  --cdrt-card-bg:      #1F7B1033;
+  --cdrt-font-heading: 'Montserrat', sans-serif;
+  --cdrt-font-body:    'Inter', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -110,7 +124,7 @@ input {
 
 /* Define the active state styles */
 .navigation li.active {
-  background-color: #FF6525;
+  background-color: var(--cdrt-primary);
   padding: 3px 1rem;
   color: white;
 }

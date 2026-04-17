@@ -13,12 +13,12 @@ const Hero = () => {
         <div
           className={`${montserrat.className} w-[100%] hidden md:block font-bold text-[28px] md:text-[50px] leading-[1.3]`}
         >
-          <h1 className="text-[#000000] text-center">{title}</h1>
+          <h1 className="text-[var(--cdrt-heading)] text-center">{title}</h1>
         </div>
-        <p className="text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[#838383]">
+        <p className="text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[var(--cdrt-body)]">
           {description1}
         </p>
-        <p className="text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[#838383]">
+        <p className="text-[14px] md:text-[18px] w-[100%] md:w-[60%] lg:w-[100%] text-[var(--cdrt-body)]">
           <strong>CDRT CONSULT</strong>{" "}
           {description2.replace(/^CDRT CONSULT\s*/i, "")}
         </p>
@@ -28,7 +28,7 @@ const Hero = () => {
         <div
           className={`${montserrat.className} md:hidden block text-center mb-2 font-semibold text-[28px] leading-[1.3]`}
         >
-          <h1 className="text-[#000000] text-center">{title}</h1>
+          <h1 className="text-[var(--cdrt-heading)] text-center">{title}</h1>
         </div>
       </div>
     </div>

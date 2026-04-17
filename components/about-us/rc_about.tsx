@@ -22,21 +22,21 @@ const RC_About = () => {
 
       <div className="flex flex-col-reverse items-center lg:items-start lg:flex-row gap-12 w-full">
         <div className="w-full flex flex-col gap-5 items-center">
-          <h1 className="text-[26px] md:text-[30px] font-bold text-[#143642] items-center text-center">
+          <h1 className="text-[26px] md:text-[30px] font-bold text-[var(--cdrt-heading)] items-center text-center">
             {title}
           </h1>
           <div className="flex flex-col items-center lg:items-start gap-3">
-            <p className="text-[16px] text-[#1A1A1A]">{description}</p>
+            <p className="text-[16px] text-[var(--cdrt-body)]">{description}</p>
           </div>
 
           <div className="flex flex-col items-center gap-3 w-full mt-8">
-            <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
+            <h2 className="text-[20px] md:text-[24px] font-bold text-[var(--cdrt-heading)]">
               Development Services
             </h2>
-            <ul className="list-none text-[16px] text-[#1A1A1A] space-y-4 w-full">
+            <ul className="list-none text-[16px] text-[var(--cdrt-body)] space-y-4 w-full">
               {services.map((service, index) => (
                 <li key={index} className="flex items-start">
-                  <span className="inline-block text-[#ED6810] text-2xl mr-3">
+                  <span className="inline-block text-[var(--cdrt-primary)] text-2xl mr-3">
                     &#x2713;
                   </span>
                   <span>{service.text}</span>
@@ -46,10 +46,10 @@ const RC_About = () => {
           </div>
 
           <div className="flex flex-col items-center gap-3 w-full mt-8">
-            <h2 className="text-[20px] md:text-[24px] font-bold text-[#143642]">
+            <h2 className="text-[20px] md:text-[24px] font-bold text-[var(--cdrt-heading)]">
               Our Approach
             </h2>
-            <p className="text-[16px] text-[#1A1A1A]">{approachText}</p>
+            <p className="text-[16px] text-[var(--cdrt-body)]">{approachText}</p>
           </div>
         </div>
       </div>

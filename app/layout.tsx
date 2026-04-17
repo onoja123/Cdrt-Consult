@@ -6,6 +6,7 @@ import Wrapper from "@/components/Wrapper";
 import { Toaster } from "react-hot-toast";
 import AOSInitializer from "@/components/AOSInitializer";
 import { ContentProvider } from "@/contexts/ContentContext";
+import ThemeInjector from "@/app/ThemeInjector";
 
 // Dynamically import Navbar with no SSR
 const Navbar = dynamic(() => import("@/components/Navbar"), {
@@ -44,6 +45,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
+        <ThemeInjector />
         <ContentProvider>
           <AOSInitializer/>
           <Wrapper>{children}</Wrapper>

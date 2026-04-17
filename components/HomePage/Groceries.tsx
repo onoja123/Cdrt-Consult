@@ -13,10 +13,10 @@ const Groceries = () => {
       className={`px-[20px] md:px-[60px] flex flex-col items-center w-full ${montserrat.className} mb-40`}
     >
       <div className="w-[100%] lg:w-[60%] flex flex-col gap-3 mb-20">
-        <h1 className="text-[#221919] text-center font-bold text-[30px]">
+        <h1 className="text-[var(--cdrt-heading)] text-center font-bold text-[30px]">
           {sectionTitle}
         </h1>
-        <p className="text-[#838383] text-left font-medium text-[14px] md:text-[18px] p-4">
+        <p className="text-[var(--cdrt-body)] text-left font-medium text-[14px] md:text-[18px] p-4">
           {sectionDescription}
         </p>
       </div>
@@ -32,10 +32,10 @@ const Groceries = () => {
               key={index}
               data-aos-duration="500"
               data-aos-delay="200"
-              className="bg-[#1F7B1033] rounded-2xl flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem]"
+              className="bg-[var(--cdrt-card-bg)] rounded-2xl flex flex-col items-center md:py-10 py-6 px-4 md:px-12 gap-6 max-w-[25rem] md:max-w-[34rem]"
             >
               <div className="flex flex-col gap-3">
-                <p className="text-[15px] text-[#4F4F4F] font-medium">
+                <p className="text-[15px] text-[var(--cdrt-body)] font-medium">
                   {item.name}
                 </p>
               </div>

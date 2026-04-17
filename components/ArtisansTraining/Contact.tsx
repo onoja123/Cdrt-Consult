@@ -8,13 +8,13 @@ const Contact = () => {
   const { title, description } = content.contactPage;
 
   return (
-    <div className="w-full relative pt-28 pb-20 px-[13px] md:px-[100px] lg:px-[200px] xl:px-[300px] bg-black overflow-hidden">
+    <div className="w-full relative pt-28 pb-20 px-[13px] md:px-[100px] lg:px-[200px] xl:px-[300px] bg-[var(--cdrt-dark-bg)] overflow-hidden">
       <div className="flex flex-col items-center gap-5 md:gap-10">
-        <p className="bg-[#FF6525] text-white py-3 px-12 rounded-full text-center text-[16px] lg:text-[20px] font-bold">
+        <p className="bg-[var(--cdrt-primary)] text-white py-3 px-12 rounded-full text-center text-[16px] lg:text-[20px] font-bold">
           {title}
         </p>
         <p
-          className={`w-full sm:w-[92%] text-[14px] lg:text-[24px] text-[#CBCBCC] text-left md:text-center ${inter.className}`}
+          className={`w-full sm:w-[92%] text-[14px] lg:text-[24px] text-[var(--cdrt-dark-text)] text-left md:text-center ${inter.className}`}
         >
           {description}
         </p>

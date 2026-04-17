@@ -84,6 +84,41 @@ export interface ContactPageContent {
   description: string;
 }
 
+export interface ThemeContent {
+  primaryColor: string;
+  headingColor: string;
+  bodyColor: string;
+  darkTextColor: string;
+  navbarBg: string;
+  darkBg: string;
+  sectionBg: string;
+  cardBg: string;
+  headingFont: string;
+  bodyFont: string;
+}
+
+export const defaultTheme: ThemeContent = {
+  primaryColor: "#FF6525",
+  headingColor: "#000000",
+  bodyColor: "#838383",
+  darkTextColor: "#CBCBCC",
+  navbarBg: "#ffffff",
+  darkBg: "#000000",
+  sectionBg: "#FAFAFA",
+  cardBg: "#1F7B1033",
+  headingFont: "Montserrat",
+  bodyFont: "Inter",
+};
+
+export const AVAILABLE_FONTS = [
+  "Montserrat",
+  "Inter",
+  "Poppins",
+  "Sora",
+  "DM Sans",
+  "Mulish",
+];
+
 export interface SiteContent {
   hero: HeroContent;
   services: ServicesContent;
@@ -94,9 +129,11 @@ export interface SiteContent {
   gallery: GalleryContent;
   footer: FooterContent;
   contactPage: ContactPageContent;
+  theme: ThemeContent;
 }
 
 export const defaultContent: SiteContent = {
+  theme: defaultTheme,
   hero: {
     title: "Welcome to CDRT",
     description1:

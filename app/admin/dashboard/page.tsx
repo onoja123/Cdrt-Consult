@@ -22,6 +22,7 @@ import {
   HiXMark,
   HiChevronRight,
   HiCheckCircle,
+  HiSwatch,
 } from "react-icons/hi2";
 import {
   defaultContent,
@@ -34,6 +35,9 @@ import {
   GalleryContent,
   FooterContent,
   ContactPageContent,
+  ThemeContent,
+  defaultTheme,
+  AVAILABLE_FONTS,
 } from "@/lib/defaultContent";
 
 // ─── firebase helpers ─────────────────────────────────────────────────────────
@@ -79,6 +83,7 @@ const NAV: { group: string; items: { id: string; label: string; Icon: NavIcon }[
     items: [
       { id: "contactPage", label: "Contact Page", Icon: HiPhone },
       { id: "footer", label: "Footer", Icon: HiLink },
+      { id: "theme", label: "Theme & Appearance", Icon: HiSwatch },
     ],
   },
 ];
@@ -772,6 +777,7 @@ function Overview({ onNavigate }: { onNavigate: (id: string) => void }) {
     { id: "team",       label: "Team & Coordinators",   desc: "Staff members and zonal coordinators",            Icon: HiUsers },
     { id: "contactPage",label: "Contact Page",          desc: "Contact page heading and description",            Icon: HiPhone },
     { id: "footer",     label: "Footer",                desc: "Address, phone numbers and email",                Icon: HiLink },
+    { id: "theme",      label: "Theme & Appearance",    desc: "Brand colours, backgrounds, text colours and fonts", Icon: HiSwatch },
   ];
 
   return (
@@ -805,6 +811,226 @@ function Overview({ onNavigate }: { onNavigate: (id: string) => void }) {
   );
 }
 
+// ─── theme editor ─────────────────────────────────────────────────────────────
+
+const COLOR_FIELDS: { key: keyof ThemeContent; label: string; hint: string }[] = [
+  { key: "primaryColor",  label: "Primary / brand colour",      hint: "Buttons, active links, badges, checkmarks" },
+  { key: "headingColor",  label: "Heading text colour",         hint: "All page & section titles" },
+  { key: "bodyColor",     label: "Body text colour",            hint: "Paragraphs and descriptions" },
+  { key: "darkTextColor", label: "Text on dark backgrounds",    hint: "Text inside the black hero & footer sections" },
+  { key: "navbarBg",      label: "Navbar background",           hint: "Top navigation bar" },
+  { key: "darkBg",        label: "Dark section background",     hint: "Footer, team header, contact header" },
+  { key: "sectionBg",     label: "Light section background",    hint: "Alternating pale sections (advisors, partners)" },
+  { key: "cardBg",        label: "Service card background",     hint: "The tinted cards in the Our Services section" },
+];
+
+function ColorRow({
+  label,
+  hint,
+  value,
+  onChange,
+}: {
+  label: string;
+  hint: string;
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  return (
+    <div className="flex items-center gap-4 py-3.5 border-b border-gray-100 last:border-0">
+      {/* swatch + native picker */}
+      <label className="relative cursor-pointer shrink-0">
+        <span
+          className="block w-10 h-10 rounded-xl border-2 border-white shadow-md ring-1 ring-gray-200"
+          style={{ background: value }}
+        />
+        <input
+          type="color"
+          value={value.length === 7 ? value : "#FF6525"}
+          onChange={(e) => onChange(e.target.value)}
+          className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
+        />
+      </label>
+
+      {/* labels */}
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-medium text-gray-700 leading-tight">{label}</p>
+        <p className="text-xs text-gray-400 mt-0.5 truncate">{hint}</p>
+      </div>
+
+      {/* hex input */}
+      <input
+        type="text"
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        maxLength={9}
+        className="w-28 text-xs font-mono bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-gray-700 focus:outline-none focus:border-orange-400 focus:bg-white uppercase"
+      />
+    </div>
+  );
+}
+
+function FontRow({
+  label,
+  hint,
+  value,
+  onChange,
+}: {
+  label: string;
+  hint: string;
+  value: string;
+  onChange: (v: string) => void;
+}) {
+  return (
+    <div className="flex items-center gap-4 py-3.5 border-b border-gray-100 last:border-0">
+      <div className="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center shrink-0">
+        <span className="text-orange-500 font-bold text-sm">Aa</span>
+      </div>
+      <div className="flex-1 min-w-0">
+        <p className="text-sm font-medium text-gray-700 leading-tight">{label}</p>
+        <p className="text-xs text-gray-400 mt-0.5">{hint}</p>
+      </div>
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-36 text-sm bg-gray-50 border border-gray-200 rounded-lg px-3 py-2 text-gray-700 focus:outline-none focus:border-orange-400 focus:bg-white"
+        style={{ fontFamily: `'${value}', sans-serif` }}
+      >
+        {AVAILABLE_FONTS.map((f) => (
+          <option key={f} value={f} style={{ fontFamily: `'${f}', sans-serif` }}>
+            {f}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}
+
+function ThemeEditor() {
+  const { data, setData, save, saving, saved } = useSectionState<ThemeContent>(
+    "theme",
+    defaultTheme
+  );
+
+  // live-preview: inject updated CSS vars as user picks colours
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty("--cdrt-primary",     data.primaryColor);
+    root.style.setProperty("--cdrt-heading",      data.headingColor);
+    root.style.setProperty("--cdrt-body",         data.bodyColor);
+    root.style.setProperty("--cdrt-dark-text",    data.darkTextColor);
+    root.style.setProperty("--cdrt-navbar-bg",    data.navbarBg);
+    root.style.setProperty("--cdrt-dark-bg",      data.darkBg);
+    root.style.setProperty("--cdrt-section-bg",   data.sectionBg);
+    root.style.setProperty("--cdrt-card-bg",      data.cardBg);
+    root.style.setProperty("--cdrt-font-heading", `'${data.headingFont}', sans-serif`);
+    root.style.setProperty("--cdrt-font-body",    `'${data.bodyFont}', sans-serif`);
+  }, [data]);
+
+  function update(key: keyof ThemeContent, value: string) {
+    setData((prev) => ({ ...prev, [key]: value }));
+  }
+
+  function resetToDefaults() {
+    setData(defaultTheme);
+  }
+
+  return (
+    <>
+      <SaveBar onSave={save} saving={saving} saved={saved} />
+      <div className="flex flex-col gap-5">
+
+        {/* live preview strip */}
+        <div
+          className="rounded-2xl overflow-hidden border border-gray-100 shadow-sm"
+          style={{ background: data.navbarBg }}
+        >
+          <div className="px-5 py-3 flex items-center gap-3 border-b border-gray-100">
+            <div className="w-2 h-2 rounded-full bg-red-400" />
+            <div className="w-2 h-2 rounded-full bg-yellow-400" />
+            <div className="w-2 h-2 rounded-full bg-green-400" />
+            <span className="ml-2 text-xs" style={{ color: data.bodyColor, fontFamily: `'${data.bodyFont}', sans-serif` }}>
+              Live preview
+            </span>
+          </div>
+          <div className="px-5 py-5 flex flex-col gap-3">
+            <h2
+              className="text-xl font-bold"
+              style={{ color: data.headingColor, fontFamily: `'${data.headingFont}', sans-serif` }}
+            >
+              Welcome to CDRT Consult
+            </h2>
+            <p
+              className="text-sm leading-relaxed"
+              style={{ color: data.bodyColor, fontFamily: `'${data.bodyFont}', sans-serif` }}
+            >
+              Where we empower sustainable development through people-centered solutions.
+            </p>
+            <div className="flex gap-2 mt-1">
+              <span
+                className="text-white text-xs font-semibold px-4 py-2 rounded-full"
+                style={{ background: data.primaryColor }}
+              >
+                Contact Us
+              </span>
+              <span
+                className="text-xs font-semibold px-4 py-2 rounded-full"
+                style={{ background: data.cardBg, color: data.bodyColor }}
+              >
+                Our Services
+              </span>
+            </div>
+          </div>
+          <div className="px-5 py-3" style={{ background: data.darkBg }}>
+            <p className="text-xs" style={{ color: data.darkTextColor, fontFamily: `'${data.bodyFont}', sans-serif` }}>
+              Footer / dark section preview
+            </p>
+          </div>
+        </div>
+
+        {/* colours */}
+        <Card>
+          <div className="flex items-center justify-between mb-1">
+            <CardTitle>Colours</CardTitle>
+            <button
+              onClick={resetToDefaults}
+              className="text-xs text-gray-400 hover:text-orange-500 font-medium transition"
+            >
+              Reset to defaults
+            </button>
+          </div>
+          {COLOR_FIELDS.map(({ key, label, hint }) => (
+            <ColorRow
+              key={key}
+              label={label}
+              hint={hint}
+              value={data[key] as string}
+              onChange={(v) => update(key, v)}
+            />
+          ))}
+        </Card>
+
+        {/* fonts */}
+        <Card>
+          <CardTitle>Fonts</CardTitle>
+          <FontRow
+            label="Heading font"
+            hint="Page titles, section headings, card titles"
+            value={data.headingFont}
+            onChange={(v) => update("headingFont", v)}
+          />
+          <FontRow
+            label="Body font"
+            hint="Paragraphs, labels, buttons, navigation"
+            value={data.bodyFont}
+            onChange={(v) => update("bodyFont", v)}
+          />
+        </Card>
+
+      </div>
+    </>
+  );
+}
+
 // ─── editor map ───────────────────────────────────────────────────────────────
 const EDITORS: Record<string, React.ComponentType> = {
   hero: HeroEditor,
@@ -816,6 +1042,7 @@ const EDITORS: Record<string, React.ComponentType> = {
   team: TeamEditor,
   contactPage: ContactPageEditor,
   footer: FooterEditor,
+  theme: ThemeEditor,
 };
 
 const SECTION_LABELS: Record<string, string> = {
@@ -828,6 +1055,7 @@ const SECTION_LABELS: Record<string, string> = {
   team: "Team & Coordinators",
   contactPage: "Contact Page",
   footer: "Footer",
+  theme: "Theme & Appearance",
 };
 
 // ─── main dashboard ───────────────────────────────────────────────────────────

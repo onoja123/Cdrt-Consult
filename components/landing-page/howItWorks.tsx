@@ -13,7 +13,7 @@ const HowItWorks = () => {
       <Image className="absolute right-0 top-24" src={svg} width={90} alt="" />
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-[#14183E] sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight text-[var(--cdrt-heading)] sm:text-4xl lg:text-5xl">
             Meet Our Team & Zonal Coordinators
           </h2>
         </div>
@@ -27,7 +27,7 @@ const HowItWorks = () => {
                     {index + 1}
                   </span>
                 </div>
-                <h3 className="mt-6 text-xl font-semibold leading-tight text-[#14183E] md:mt-10">
+                <h3 className="mt-6 text-xl font-semibold leading-tight text-[var(--cdrt-heading)] md:mt-10">
                   {member.title}
                 </h3>
                 <p className="mt-4 text-base text-gray-600">{member.name}</p>
@@ -36,7 +36,7 @@ const HowItWorks = () => {
           </div>
 
           <div className="mt-12 lg:mt-20">
-            <h3 className="text-2xl font-bold text-[#14183E] text-center">
+            <h3 className="text-2xl font-bold text-[var(--cdrt-heading)] text-center">
               Zonal Coordinators
             </h3>
             <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -45,10 +45,10 @@ const HowItWorks = () => {
                   key={index}
                   className="text-center p-6 border border-gray-200 rounded-lg shadow-md"
                 >
-                  <h4 className="text-xl font-semibold text-[#14183E]">
+                  <h4 className="text-xl font-semibold text-[var(--cdrt-heading)]">
                     {coordinator.zone}
                   </h4>
-                  <p className="mt-2 text-base font-medium text-[#14183E]">
+                  <p className="mt-2 text-base font-medium text-[var(--cdrt-heading)]">
                     {coordinator.coordinator}
                   </p>
                   <p className="text-sm text-gray-600">{coordinator.department}</p>

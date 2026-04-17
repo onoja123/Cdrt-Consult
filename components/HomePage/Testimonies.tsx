@@ -8,9 +8,9 @@ const Testimonies: React.FC = () => {
   const { advisors, partners } = content;
 
   return (
-    <div className={`${montserrat.className} w-full bg-[#FAFAFA] py-24 flex flex-col gap-16 items-center`}>
+    <div className={`${montserrat.className} w-full bg-[var(--cdrt-section-bg)] py-24 flex flex-col gap-16 items-center`}>
       <div className="w-full max-w-7xl px-4">
-        <h1 className="text-[#000000] text-[24px] lg:text-[30px] font-bold text-center mb-10">
+        <h1 className="text-[var(--cdrt-heading)] text-[24px] lg:text-[30px] font-bold text-center mb-10">
           Research Advisors
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -47,7 +47,7 @@ const Testimonies: React.FC = () => {
       </div>
 
       <div className="w-full max-w-7xl px-4">
-        <h1 className="text-[#000000] text-[24px] lg:text-[30px] font-bold text-center mb-10">
+        <h1 className="text-[var(--cdrt-heading)] text-[24px] lg:text-[30px] font-bold text-center mb-10">
           Partners
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

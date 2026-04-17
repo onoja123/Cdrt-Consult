@@ -14,6 +14,7 @@ import {
   GalleryContent,
   FooterContent,
   ContactPageContent,
+  ThemeContent,
 } from "@/lib/defaultContent";
 
 interface ContentContextType {
@@ -45,7 +46,7 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     async function loadAll() {
-      const [hero, services, advisors, partners, about, team, gallery, footer, contactPage] =
+      const [hero, services, advisors, partners, about, team, gallery, footer, contactPage, theme] =
         await Promise.all([
           fetchSection<HeroContent>("hero", defaultContent.hero),
           fetchSection<ServicesContent>("services", defaultContent.services),
@@ -56,9 +57,10 @@ export function ContentProvider({ children }: { children: React.ReactNode }) {
           fetchSection<GalleryContent>("gallery", defaultContent.gallery),
           fetchSection<FooterContent>("footer", defaultContent.footer),
           fetchSection<ContactPageContent>("contactPage", defaultContent.contactPage),
+          fetchSection<ThemeContent>("theme", defaultContent.theme),
         ]);
 
-      setContent({ hero, services, advisors, partners, about, team, gallery, footer, contactPage });
+      setContent({ hero, services, advisors, partners, about, team, gallery, footer, contactPage, theme });
       setLoading(false);
     }
     loadAll();
